@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags HTML</title>
+</head>
+<body>
+   <h1>olá mundo</h1> 
+   <p>
+        <strong> testes usando as tags no HTML,<br/>
+        quebrando uma linha.</strong>
+   </p>
+   <article>
+        <section>
+         <h2>sub titulo</h2>
+   
+            <img src="https://blog.xpeducacao.com.br/wp-content/uploads/2022/08/como-funciona-o-html-1024x576.jpg"
+            alt="representação HTML" width="50%"/>
+        </section>
+        <section>
+            <a href="https://www.w3c.br/">Link da W3C </a>
+        </section>
+    </article>
+    <article>
+        <section>
+            <h2><strong>listas</strong></h2>
+            <ol>
+                <li>lista ordenada 1</li>
+                <li>lista ordenada 2</li>
+                <li>lista ordenada 3</li>
+            </ol>
+        <br/>
+            <ul>
+                <li>lista não ordenada 1 </li>
+                    <ul>
+                        <li>sub lista não ordenada 1</li>
+                        <li>sub lista não oedenada 2</li>
+                    </ul>
+                <li>lista não ordenada 2 </li>
+                    <ul>
+                        <li>sub lista não ordenada 1</li>
+                    </ul>
+                <li>lista não ordenada 3 </li>
+            </ul>
+        <br/>
+            <dl>
+                <dt>lista de definição 1</dt> <dd>definição do item 1</dd>
+                <dt>lista de definição 2</dt> <dd>definição do item 2</dd>
+                <dt>lista de definição 3</dt> <dd>definição do item 3</dd>
+            </dl>
+     
+    </section>
+</article>
+<table widht="100%" border="1">
+
+    <thead>
+        <tr>
+            <th>coluna titulo</th> <th>TH para coluna com titulo</th>
+            <th>Sempre entre linhas (tr)</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>corpo da tabela</td> <td>TD para coluna normal</td>
+            <td>entre linhas também</td>
+        </tr>
+        <tr>
+            <td>outra linha da tabela</td> <td>TR para nova linha</td>
+            <td>mescla com colspan</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="3">colunas mescladas</td>
+<!--para configuração de uma tag usar o comando dentro da primeira 
+tag antes de ">" ex: acima-->     
+        </tr>
+    </tfoot>
+
+</table>
+
+<video src="https://youtu.be/waX_3VjIqpU" controls></video>
+<audio src="https://soundcloud.com/faul-official/changes-feat-wad-ad?in=nfssoundtrack/sets/forza-horizon-2-soundtrack-nfssoundtrack&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" autoplay controls loop></audio>
+
+<form action="formulario-no-HTML" method="post">
+    <fieldset>
+        <legend>Dados do usuário</legend>
+        <label for="nome">Nome:</label>
+        <input type="text" minlength="3" id="nome"/>
+        <label for="dataNascimento">Data de nascimento:</label>
+        <input type="date" id="dataNascimento">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required="true" placeholder="ex:AnaPaula@gmail.com">
+        <label for="senha">Digite uma senha:</label>
+        <input type="password" id="senha" maxlength="8" placeholder="ex:123456" >
+        <br>
+        <label for="numeroCelular">N°Tel:</label>
+        <input type="tel" id="numeroCelular" placeholder="(11) 12345-6789"
+        pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required>
+    </fieldset>
+    <fieldset>
+    <legend>Endereço</legend        >
+    <label for="endereco">Tipo:</label>
+    <select id="endereco">
+        <option value="">selecione</option>
+        <option value="">casa</option>
+        <option value="">apartamento</option>
+        <option value="">kitnet</option>
+        <option value="">outros</option>
+    </select>
+    <label for="numeroCasa">N°residencia:</label>
+    <input type="number" minlength="1" maxlength="5">
+
+    </fieldset>
+    <fieldset>
+        <button type="submit">Cadastrar-se</button>
+        <button type="reset">Limpar formulário</button>
+        <br>
+        <label for="msg">Deixe uma mensagem</label>
+        <input type="radio" value="sugestao">Sugestão
+        <label for="textMsg"></label>
+        <input type="radio" value="critica">Crítica
+        <input type="radio" value="elogio">Elôgio
+        <br>
+       <textarea name="textMsg" id="textMsg" cols="30" rows="10"></textarea>
+    </fieldset>
+
+
+</form>
+
+</body>
+
+</html> 
