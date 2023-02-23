@@ -1,0 +1,7 @@
+
+header{color: grey; background-color: turquoise; text-align: center;}
+img {width: 50%;}
+
+.imagemLink {
+    display: flex; align-items: center;
+}
