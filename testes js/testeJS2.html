@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testes de Java Script</title>
     <link rel="stylesheet" href="testeJS1.css">
-    <script src="testeJS.js"></script>
 </head>
 <body>
     <header>
@@ -19,6 +18,11 @@
     Y: <input type="text" id="y1">
     <button onclick="redimencionar()">Press</button>
 </div>
+<p>A partir do click no botão abaixo uma nova imagem aleatória de cachorros será carregada utilizando requisições assíncronas com XMLHttpRequest</p>
+
+<img id="img_dog" src="" alt="Aguardando a imagem ser carregada" />
+<br/>
+<button onclick="carregarImagens()">Carregar Imagens</button>
     </main>
     <aside>
 
@@ -36,6 +40,14 @@
 
     </aside>
     <footer>
+        <div id="contatenacao">valores ordenados: </div>
+        <input type="number" id="num1" placeholder="Adicione um valor:">
+        <br>
+        <input type="number" id="num2" placeholder="Adicione um valor">
+        <br>
+        <button onclick="calVetor()">Resultado</button>
+        <div id="resultadoVetor">Resultado = </div>
     </footer>
+    <script src="testeJS.js"></script>
 </body>
-</html>
+</html>:
